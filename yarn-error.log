@@ -1,0 +1,108 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DELL\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  14.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@adiwajshing%2fbaileys: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\DELL\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141512:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "WezaC",
+    "version": "V 3.0.0",
+    "description": ".",
+    "main": "./ng19/bot.js",
+    "scripts": {
+      "start": "supervisor -s bot.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/DARKCRIME1/ng19.git"
+    },
+    "keywords": [
+      "whatsapp",
+      "bot",
+      "ai",
+      "WezaC",
+      "WezaC WA"
+    ],
+    "author": "YUMI & SADEE",
+    "developer": "@YUMI & SADEE / @YUMI & SADEE",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+      "url": "https://github.com/Dark-Knight-Hiruwa/T-REX/issues"
+    },
+    "homepage": "https://github.com/Dark-Knight-Hiruwa/T-REX#readme",
+    "dependencies": {
+      "@adiwajshing/baileys": "3.5.2",
+      "@lh2020/speedtest-net": "^2.1.1",
+      "browser-id3-writer": "^4.4.0",
+      "playstore-scraper": "^1.0.0",
+      "axios": "^0.21.1",
+      "googlethis": "^1.0.7",
+      "audiobuffer-to-wav": "1.0.0",
+      "chalk": "^4.1.0",
+      "coffeehouse": "^2.0.0",
+      "cwebp": "^2.0.5",
+      "search-engine-client": "^1.2.6",
+      "deepai": "^1.0.17",
+      "cwebp-bin": "^6.1.1",
+      "tinyurl": "^1.1.7",
+      "dotenv": "^8.2.0",
+      "tiktok-scraper": "1.4.20",
+      "request": "2.88.2",
+      "exchange-rates-api": "^1.0.2",
+      "fluent-ffmpeg": "^2.1.2",
+      "form-data": "^4.0.0",
+      "g-i-s": "^2.1.6",
+      "google-translate-tts": "^0.3.0",
+      "got": "^11.8.2",
+      "heroku-client": "^3.1.0",
+      "jimp": "0.16.0",
+      "js-ffmpeg": "0.0.26",
+      "jsdom": "^16.5.1",
+      "jpeg-js": "^0.4.3",
+      "langs": "^2.0.0",
+      "languagedetect": "^2.0.0",
+      "meme-maker": "^2.1.2",
+      "mongodb": "^3.6.3",
+      "node-fetch": "^2.6.1",
+      "node-tesseract-ocr": "^2.0.0",
+      "pg": "^8.5.1",
+      "sequelize": "^6.5.1",
+      "simple-git": "^2.37.0",
+      "sozlukjs": "^1.1.0",
+      "spotify-web-api-node": "^5.0.0",
+      "sqlite3": "5.0.0",
+      "solenolyrics": "^5.0.0",
+      "translatte": "^3.0.0",
+      "wikijs": "^6.0.1",
+      "yt-search": "^2.7.4",
+      "ytdl-core": "^4.9.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

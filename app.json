@@ -1,0 +1,58 @@
+{
+ "name":"wezacbot",
+ "description":"this app does one little thing, and does it well",
+ "keyword":[
+     "productivity",
+     "HTML5",
+     "scalpel"
+ ],
+ "repository":"https://github.com/wezac0001/Nandunu.git",
+ "success_url":"/welcome",
+ "scripts":{
+     "postdeploy":"bundle exec rake bootstrap"
+ },
+ "env":{
+     "SECRET_TOKEN":{
+         "description":"A secret key for verifying the integrity of signed cookies",
+         "generator":"secret"
+     },
+     "WEB_CONCURRENCY":{
+         "description":"the number of prosses to run",
+         "value":"5"
+     }
+ },
+ "formation":{
+     "web":{
+         "quantity": 1,
+         "size": "standard-1x"
+     }
+ },
+ "image":"heroku/nodejs",
+ "addons":[
+     "openredis",
+     {
+         "plan":"mongolab:shared-single-small",
+         "as":"MONGO"
+     },
+     {
+         "plan":"heroku-postgresql",
+         "options":{
+             "version":"9.5"
+         }
+     }
+ ],
+ "buildpacks":[
+     {
+         "url":"https://github.com/stomita/heroku-buildpack-phantomjs"
+     }
+ ],
+ "environments":{
+     "test":{
+         "scripts":{
+             "test":"bundle exec rake test"
+         }
+     }
+ }
+
+    
+}
